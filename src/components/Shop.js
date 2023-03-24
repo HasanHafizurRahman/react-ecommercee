@@ -9,7 +9,7 @@ const Shop = () => {
   }, []);
   return (
     <div className="flex">
-      <div className="w-4/5 grid grid-cols-3 px-10">
+      <div className="w-4/5 grid grid-cols-1 lg:grid-cols-3 px-10">
         {product.map((item) => (
           <div className="w-[286px] border 1px #95A0A7 rounded-md">
             <img className="w-[286px] h-[286px]" alt="shoe" src={item.img} />
@@ -22,7 +22,7 @@ const Shop = () => {
           </div>
         ))}
       </div>
-      <div className="w-1/5">Shop Cart</div>
+      <div className="w-1/5 h-[944px] bg-[#FF9900] mr-11">Shop Cart</div>
     </div>
   );
 };
