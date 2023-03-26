@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Cart from "./Cart";
 import Product from "./Product";
 
 const Shop = () => {
@@ -26,9 +27,11 @@ const Shop = () => {
           />
         ))}
       </div>
-      <div className="w-1/5 h-[944px] bg-[#FF9900] mr-11">
-        <h1>Shop Cart</h1>
-        <h2>Selected Products :{cart.length} </h2>
+      <div
+        style={{ background: "rgba(255, 155, 0, 0.3)" }}
+        className="w-1/5 h-[944px] mr-11"
+      >
+        <Cart cart={cart} />
       </div>
     </div>
   );
